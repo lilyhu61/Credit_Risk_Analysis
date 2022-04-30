@@ -10,7 +10,8 @@ We adopted the following procedure:
 - Compare two machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier.
 
 ## Results
-**1. RandomOverSampler model**
+### 1. RandomOverSampler model
+
 The balanced accuracy score is 65%.
 The high_risk precision is about 1% only with 62% sensitivity which makes a F1 of 2% only.
 Due to the high number of the low_risk population, its precision is almost 100% with a sensitivity of 68%.
@@ -20,7 +21,8 @@ Due to the high number of the low_risk population, its precision is almost 100% 
 ![Screen Shot 2022-04-30 at 4 47 00 PM](https://user-images.githubusercontent.com/95242493/166125065-7fb3dacd-c63d-42bd-a088-0fa841253f57.png)
 ![Screen Shot 2022-04-30 at 4 47 19 PM](https://user-images.githubusercontent.com/95242493/166125068-16ee0d56-5376-49bd-9a98-fde1a7384477.png)
 
-**2. SMOTE model**
+### 2. SMOTE model
+
 The results are pretty similar to the previous model.
 The balanced accuracy score is 64%.
 The high_risk precision is about 1% only with 63% sensitivity which makes a F1 of 2% only.
@@ -31,8 +33,43 @@ Due to the high number of the low_risk population, its precision is almost 100% 
 ![Screen Shot 2022-04-30 at 4 49 56 PM](https://user-images.githubusercontent.com/95242493/166125122-f156e4f7-9694-4208-9d04-6e6a38cb4f85.png)
 ![Screen Shot 2022-04-30 at 4 50 07 PM](https://user-images.githubusercontent.com/95242493/166125126-bf3dc7fb-9582-4dde-927e-5ee3abd18869.png)
 
-**3. ClusterCentroids model**
+### 3. ClusterCentroids model
+Here the balanced accuracy score is down to about 52%.
+The high_risk precision is still 1% only with 63% sensitivity which makes a F1 of 1%.
+Due to the high number of false positives, the low_risk sensitivity is only 40%.
+
 ![Screen Shot 2022-04-30 at 4 52 02 PM](https://user-images.githubusercontent.com/95242493/166125165-2eff93b3-7845-48e7-9444-5b442ebf4191.png)
 ![Screen Shot 2022-04-30 at 4 52 15 PM](https://user-images.githubusercontent.com/95242493/166125172-dce4541e-9625-4c1c-acc6-5adc9a8dd264.png)
 
 ![Screen Shot 2022-04-30 at 4 52 27 PM](https://user-images.githubusercontent.com/95242493/166125180-aeee2fb4-01a4-4bed-89c8-64ca4a3432be.png)
+
+### 4. SMOTEENN model
+
+The balanced accuracy score is about 62%.
+The high_risk precision is still 1% only with 68% sensitivity which makes a F1 of only 2%.
+Due to the high number of false positives, the low_risk sensitivity is 57%.
+![Screen Shot 2022-04-30 at 4 56 06 PM](https://user-images.githubusercontent.com/95242493/166125243-b69dbbc9-4ddb-4a61-99d5-bcbdfe65d091.png)
+![Screen Shot 2022-04-30 at 4 56 17 PM](https://user-images.githubusercontent.com/95242493/166125249-4d67ec82-5667-4874-ad60-de4dfe773b45.png)
+![Screen Shot 2022-04-30 at 4 56 28 PM](https://user-images.githubusercontent.com/95242493/166125253-aa39c93f-e91e-40a0-8e8e-d215f06e4e2b.png)
+
+### 5. BalancedRandomForestClassifier model
+
+The balanced accuracy score improved to about 79%.
+The high_risk precision is still low at 4% only with 67% sensitivity which makes a F1 of only 7%.
+Due to a lower number of false positives, the low_risk sensitivity is now 91% with 100% presicion.
+![Screen Shot 2022-04-30 at 4 58 15 PM](https://user-images.githubusercontent.com/95242493/166125314-60acfb5e-8b9e-4b00-b413-00efbfa29fa7.png)
+![Screen Shot 2022-04-30 at 4 58 27 PM](https://user-images.githubusercontent.com/95242493/166125316-b793f77f-5bd2-4678-a1d5-d8fd9655b7e7.png)
+![Screen Shot 2022-04-30 at 4 58 40 PM](https://user-images.githubusercontent.com/95242493/166125322-b90cd55e-0a93-4feb-a8b7-a47755a1825a.png)
+
+### 6. EasyEnsembleClassifier model
+
+Now, the balanced accuracy score is high to about 93%.
+The high_risk precision is still low at 7% only with 91% sensitivity which makes a F1 of only 14%.
+Due to a lower number of false positives, the low_risk sensitivity is now 94% with 100% presicion.
+
+![Screen Shot 2022-04-30 at 4 59 56 PM](https://user-images.githubusercontent.com/95242493/166125353-1ff5c71f-b67b-41ca-87ba-16322885fd7f.png)
+![Screen ![Screen Shot 2022-04-30 at 5 00 22 PM](https://user-images.githubusercontent.com/95242493/166125361-a43a2f7c-1ec4-4cc6-bf83-b3262ef5d032.png)
+Shot 2022-04-30 at 5 00 08 PM](https://user-images.githubusercontent.com/95242493/166125356-ab466e35-7941-4be8-870d-a7ac42c4b705.png)
+
+
+
