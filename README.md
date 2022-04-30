@@ -34,9 +34,9 @@ Due to the high number of the low_risk population, its precision is almost 100% 
 ![Screen Shot 2022-04-30 at 4 50 07 PM](https://user-images.githubusercontent.com/95242493/166125126-bf3dc7fb-9582-4dde-927e-5ee3abd18869.png)
 
 ### 3. ClusterCentroids model
-Here the balanced accuracy score is down to about 52%.
-The high_risk precision is still 1% only with 63% sensitivity which makes a F1 of 1%.
-Due to the high number of false positives, the low_risk sensitivity is only 40%.
+Here the balanced accuracy score is down to about 53%.
+The high_risk precision is still 1% only with 61% sensitivity which makes a F1 of 1%.
+Due to the high number of false positives, the low_risk sensitivity is only 45%.
 
 ![Screen Shot 2022-04-30 at 4 52 02 PM](https://user-images.githubusercontent.com/95242493/166125165-2eff93b3-7845-48e7-9444-5b442ebf4191.png)
 ![Screen Shot 2022-04-30 at 4 52 15 PM](https://user-images.githubusercontent.com/95242493/166125172-dce4541e-9625-4c1c-acc6-5adc9a8dd264.png)
@@ -68,8 +68,7 @@ The high_risk precision is still low at 7% only with 91% sensitivity which makes
 Due to a lower number of false positives, the low_risk sensitivity is now 94% with 100% presicion.
 
 ![Screen Shot 2022-04-30 at 4 59 56 PM](https://user-images.githubusercontent.com/95242493/166125353-1ff5c71f-b67b-41ca-87ba-16322885fd7f.png)
-![Screen ![Screen Shot 2022-04-30 at 5 00 22 PM](https://user-images.githubusercontent.com/95242493/166125361-a43a2f7c-1ec4-4cc6-bf83-b3262ef5d032.png)
-
+![Screen Shot 2022-04-30 at 5 13 27 PM](https://user-images.githubusercontent.com/95242493/166125591-160fd38d-914b-4995-9714-b8ae3ddc3008.png)
 ![Screen Shot 2022-04-30 at 5 04 19 PM](https://user-images.githubusercontent.com/95242493/166125428-76dccc41-8b96-4bd6-9b06-8f1a02f68f7e.png)
 
 ## Summary
